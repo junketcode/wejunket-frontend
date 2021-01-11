@@ -1,0 +1,170 @@
+.personal-use{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+  
+    .grey-title{
+      width: 15rem;
+      text-align: center;
+      font-size: 2em;
+      margin: 0 auto 1.5rem auto;
+    } 
+    
+    .sufering{
+      margin: 0 auto .25rem auto;
+      width: 10rem;
+    }
+    
+    .personal-container{
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 1rem;
+      @media (min-width: 950px) {
+        flex-direction: row;
+        align-items: center;
+        width: 100vw;
+      }
+      @media (min-width: 1200px) {
+        width: 76vw;
+      }
+  
+      div{
+        flex-basis: 33.3%;
+      }
+
+      .personal-quote-container{
+        position: relative;
+
+        .personal-rectangle{
+          position: absolute;
+          z-index: 0;
+          height: 12rem;
+          width: 16rem;
+          top: 1.5rem;
+          left: -4rem;
+          @media (min-width: 400px) {
+            width: 17rem;
+          }
+          @media (min-width: 768px) {
+            width: 27rem;
+          }
+          @media (min-width: 950px) {
+            width: 19rem;
+          }
+        }
+      
+        .feedback-quote{
+          position: relative;
+          background: #FFFFFF;
+          box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.15);
+          border-radius: 23.0458px;
+          height: 12rem;
+          display: flex;
+          margin: 0 auto 2rem auto;
+          justify-content: center;
+          align-items: center;
+          max-width: 19rem;
+          padding: 1.5rem 2rem;
+          z-index: 1;
+
+          p{
+            font-size: .875rem;
+            color: #6FC396;
+            line-height: 120%;
+            z-index: 2;
+            text-align: center;
+          }
+
+          .triangle{
+              position: absolute;
+              width: 60px;
+              height: 60px;
+              border-bottom-left-radius: 20px;
+              background-color: #fff;
+              z-index: 1;
+            }
+      
+            .shape1{
+              transform: rotate(56deg) skewX(-36deg);
+              left: -8px;
+              top: 40px;
+            }
+      
+            .shape2{
+              transform: rotate(-45deg) skewX(-15deg);
+              right: 45%;
+              bottom: -14px;
+            }
+      
+            .shape3{
+              transform: rotate(132deg) skewX(-36deg);
+              right: 10%;
+              top: -7px;
+            }
+        }
+      }
+  
+      p{
+        font-weight: 500;
+      }
+      .content-left{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        @media (min-width: 950px) {
+          padding-right: .75rem;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+      
+        p{
+          text-align: center;
+          padding: 1rem;
+          width: 90vw;
+          @media (min-width: 768px) {
+            width: 30rem;
+          }
+          @media (min-width: 950px) {
+            width: 15rem;
+            text-align: right;
+            z-index: 2;
+          }
+        }
+      }
+  
+      .content-right{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        @media (min-width: 950px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        
+        p{
+          text-align: center;
+          padding: 1rem;
+          width: 90vw;
+          @media (min-width: 768px) {
+            width: 30rem;
+          }
+          @media (min-width: 950px) {
+            width: 19rem;
+            text-align: left;
+            z-index: 2;
+          }
+        }
+      }
+    }
+  }
+
+.personal-container :nth-child(1) { order: 2; }
+.personal-container :nth-child(2) { order: 1; }
+.personal-container :nth-child(3) { order: 3; }
+
+@media (min-width: 950px) {
+  .personal-container :nth-child(1) { order: 1; }
+  .personal-container :nth-child(2) { order: 2; }
+  .personal-container :nth-child(3) { order: 3; }
+}

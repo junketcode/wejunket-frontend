@@ -1,0 +1,86 @@
+@import url("https://use.typekit.net/bcl6bam.css");
+@import "~@fortawesome/fontawesome-svg-core/styles.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.junket{
+  background-image: url("../public/img/v2/home-bg.svg");
+  background-size: cover;
+}
+
+.container{
+  width: 90vw;
+  margin: auto;
+}
+
+.blue-text{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 105.97%;
+  /* or 21px */
+
+  text-align: center;
+
+  /* #60A7DB */
+
+  color: #60A7DB;
+}
+
+.grey-title{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 105.97%;
+  /* identical to box height, or 46px */
+
+  /* #405764 */
+
+  color: #405764;
+}
+
+.grey-subtitle{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 105.97%;
+  /* or 21px */
+
+  text-align: right;
+
+  /* #405764 */
+
+  color: #405764;
+}
+
+.red-text{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+
+  /* #EA3844 */
+
+  color: #EA3844;
+}
+
+p{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 150%;
+  /* or 24px */
+
+  color: #405764;
+}
+

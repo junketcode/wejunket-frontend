@@ -1,0 +1,78 @@
+.two-types-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4.5rem auto 0 auto;
+    @media (max-width: 500px) {
+      width: 17.5rem;
+      margin: 1rem auto 0 auto;
+    }
+  
+    .grey-title{
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 2em;
+      width: 80vw;
+    }
+  
+    .sufering{
+      margin-bottom: 2rem;
+    }
+  
+    .two-types-top{
+      display: flex;
+      margin-top: 7rem;
+      margin-bottom: 5rem;
+      flex-direction: column;
+      @media (max-width: 500px) {
+        width: 17.5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+      }
+      @media (min-width: 1000px) {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .features-content {
+        @media (max-width: 500px) {
+            margin: 0 auto;
+            width: 17rem;
+        }
+      }
+
+      .business-img .phone-frames-right {
+          width: 17rem;
+          margin: 1rem auto;
+      }
+    }
+    
+    .two-types-down{
+      display: flex;
+      flex-direction: column-reverse;
+      @media (max-width: 500px) {
+         width: 17.5rem;       
+      }
+      @media (min-width: 1000px) {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .features-content{
+        @media (max-width: 500px) {
+          margin: 0 auto;
+          width: 17rem;        
+        }
+      }
+
+      .business-img .phone-frames-left{
+        width: 17rem;
+        margin: 1rem auto;
+      }
+      
+      div{
+        flex-basis: 50%;
+      }
+    }
+  
+  }

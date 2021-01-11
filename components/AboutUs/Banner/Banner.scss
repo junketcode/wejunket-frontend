@@ -1,0 +1,161 @@
+.wejunket-banner{
+  padding-top: 13rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #405764;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding-top: 11rem;
+    justify-content: center;
+  }
+  @media (min-width: 1000px) {
+    padding-top: 11rem;
+  }
+  @media (min-width: 1400px) {
+    padding-top: 15rem;
+  }
+
+  .banner-left{
+    flex-basis: 50%;
+    width: 85vw;
+    @media (min-width: 768px) {
+      flex-basis: 65%;
+    }
+    @media (min-width: 1000px) {
+      flex-basis: 80%;
+    }
+    @media (min-width: 1325px) {
+      flex-basis: 42%;
+      padding-right: 1.25rem;
+    }
+
+    .banner-title{
+      font-family: 'Raleway';
+      font-weight: bold;
+      min-width: 16.5rem;
+      font-size: 2.875rem;
+      line-height: 105.97%;
+      margin-bottom: 1.875rem;
+      color: #405764;
+    }
+
+    .banner-description{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1em;
+      line-height: 150%;
+      color: #60A7DB;
+      min-width: 16.5rem;
+      margin-top: 1.75rem;
+    }
+
+    .download-app{
+      display: flex;
+      justify-content: center;
+      margin-top: 4vh;
+      @media (min-width: 768px) {
+        justify-content: start;
+        margin: 1.5rem 0;
+      }
+
+      a.apple {
+        margin-right: .5rem;
+      }
+
+      img{
+        height: 3rem;
+      }
+    }
+    .play-btn-style{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      height: 14rem;
+      @media (min-width: 768px) {
+        flex-direction: row;
+        height: 8rem;
+        padding-left: 3rem;
+        justify-content: flex-start;
+      }
+
+      button{
+        &:focus{
+          outline-style: none;
+        }
+      }
+
+      .txt-style{
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 105.97%;
+        // textAlign: center;
+        color: #EA3844;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .banner-right{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    @media (min-width: 768px) {
+      flex-basis: 88%;
+      flex-direction: row;
+      align-items: initial;
+    }
+    @media (min-width: 1000px) {
+      flex-basis: 70%;
+    }
+    @media (min-width: 1325px) {
+      flex-basis: 42%;
+    }
+
+    .choose-next{
+      display: flex;
+      align-items: flex-end;
+      padding-bottom: 9.375rem;
+      margin: 0 auto;
+      width: 10.3125rem;
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 105.97%;
+      /* or 21px */
+      text-align: center;
+      /* #6FC396 */
+      color: #6FC396;
+      @media (min-width: 768px) {
+        padding-bottom: 5.375rem;
+        text-align: right;
+      }
+      @media (min-width: 1325px) {
+        padding-bottom: 4.375rem;
+        margin: 0 -1.875rem 0 0;
+      }
+    }
+    .phone-frame{
+      position: relative;
+      display: flex;
+      .phone1{
+        z-index: 3;
+        margin: 2rem auto 1rem auto;
+        @media (min-width: 1325px) {
+          margin: -.75rem -4rem 0 2rem;
+        }
+      }
+    }
+  }
+
+}
+
+

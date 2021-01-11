@@ -1,0 +1,85 @@
+.how-work{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+
+  .blue-text{
+    font-size: 1em;
+  }
+
+  .take-history{
+    margin-bottom: .625rem;
+    @media (max-width: 767px) {
+      width: 14rem;
+    }
+  }
+
+  .grey-title{
+    font-size: 2em;
+  }
+
+  .take-adventure{
+    margin-bottom: 1.75rem;
+    @media (max-width: 767px) {
+      width: 15rem;
+    } 
+  }
+
+  .frame-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    div.deeper {
+      @media (min-width: 768px) {
+        margin-top: 3rem;
+      }
+    }
+
+    div.large-screen {
+      @media (min-width: 768px) {
+        padding-top: 1.5rem;
+      }
+    }
+
+    div{
+      max-width: 206px;
+      padding: 0 .5rem;
+
+      img{
+        margin: 0 auto 2rem auto;
+        border-radius: .75rem;
+      }
+    }
+
+    p{
+      line-height: 120%;
+      text-align: center;
+      max-width: 200px;
+      margin: 1.4rem auto;
+
+      span{
+        display: block;
+      }
+    }
+  }
+
+  .how-work-action{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    p{
+      padding-right: 16px;
+    }
+  }
+}

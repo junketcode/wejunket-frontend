@@ -1,0 +1,19 @@
+.app-store-group {
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  @media (min-width: 1400px) {
+    margin-top: 6.8rem;
+  }
+
+  a.apple {
+    margin-right: .5rem;
+  }
+  
+  img{
+    height: 2.5rem;
+    @media (min-width: 1000px) {
+      height: 3rem;
+    }
+  }
+}

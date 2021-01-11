@@ -1,0 +1,140 @@
+.adventure-pocket{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+
+  .grey-title{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 auto 1.5rem auto;
+  } 
+  
+  .sufering{
+    margin: 0 auto 1.5rem auto;
+  }
+
+  .adventure-explain{
+    width: 17rem;
+    text-align: center;
+    @media (min-width: 768px) {
+      width: 35rem;
+    }
+  }
+  
+  .pocket-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    @media (min-width: 950px) {
+      flex-direction: row;
+      width: 100vw;
+    }
+    @media (min-width: 1200px) {
+      width: auto;
+    }
+
+    div{
+      flex-basis: 33.3%;
+    }
+
+    img {
+      display: none;
+      //hidden on smaller screens
+      @media (min-width: 950px){
+        padding-top: 2rem;
+        display: block;
+      }
+    }
+
+    p{
+      font-weight: 500;
+    }
+    .content-left{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media (min-width: 950px) {
+        padding-left: 2.25rem;
+      }
+    
+      p{
+        text-align: center;
+        padding: 1rem;
+        width: 90vw;
+        @media (min-width: 768px) {
+          width: 30rem;
+        }
+        @media (min-width: 950px) {
+          width: 20rem;
+          text-align: right;
+        }
+      }
+    }
+
+    .content-right{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      @media (min-width: 950px) {
+        padding-right: 2.25rem;
+      }
+      
+      p{
+        text-align: center;
+        padding: 1rem;
+        width: 90vw;
+        @media (min-width: 768px) {
+          width: 30rem;
+        }
+        @media (min-width: 950px) {
+          width: 20rem;
+          text-align: left;
+        }
+      }
+    }
+
+  }
+
+  .star-feature{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+    div{
+      width: 80vw;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: .8rem auto;
+      @media (min-width: 768px) {
+        width: 11rem;
+        margin: .8rem .25rem;
+      }
+      @media (min-width: 1000px) {
+        width: 15rem;
+      }
+      @media (min-width: 1400px) {
+        width: 20rem;
+      }
+
+      img{
+        padding-right: 16px;
+      }
+
+      p{
+        font-weight: bold;
+        font-size: 1rem;
+        @media (min-width: 768px) {
+          font-size: .75rem;
+        }
+        @media (min-width: 1000px) {
+          font-size: 1rem;
+        }
+      }
+
+    }
+  }
+}

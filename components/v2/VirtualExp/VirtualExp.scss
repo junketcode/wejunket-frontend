@@ -1,0 +1,115 @@
+.virtual-exp{
+  margin: 8rem auto 0 auto;
+
+  .blue-text{
+    text-align: center;
+    font-size: 1em;
+    @media (min-width: 768px) {
+      text-align: start;
+    }
+  }
+
+  .grey-title{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    margin-top: .5rem;
+    font-size: 2em;
+    @media (min-width: 768px) {
+      text-align: start;
+    }
+  }
+  
+  .sufering{
+    margin: 0 auto 1.5rem auto;
+    @media (min-width: 768px) {
+      margin: 0 auto 1.5rem 0;
+    }
+  }
+
+  .virtual-explain-text{
+    width: 85vw;
+    text-align: center;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      text-align: start;
+      width: 45vw;
+      margin: 0 0;
+    }
+  }
+
+  .virtual-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1rem;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+    
+
+    .item-list{
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      margin-top: 1.875rem;
+      @media (min-width: 768px) {
+        margin-top: 0;
+      }
+    }
+
+    .exp-item{
+      max-width: 27rem;
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.15);
+      border-radius: 15px;
+      padding: 1.4rem 1.5rem;
+      background-color: #fff;
+      z-index: 4;
+      margin-bottom: 1.25rem;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+
+      img{
+        padding-right: 1.4375rem;
+      }
+
+      p{
+        font-size: 1em;
+        padding-top: .5rem;
+        line-height: 120%;
+      }
+    }
+
+    .img-polygon{
+      position: absolute;
+      right: 1rem;
+      top:33rem;
+      z-index: -1;
+      @media (min-width: 768px) {
+        right: -3.75rem;
+        top: -2.75rem;
+      }
+    }
+
+    .img-tower-desktop{
+      position: absolute;
+      right:0px;
+      top: 35rem;
+      z-index: -1;
+      @media (min-width: 768px) {
+        right: 1rem;
+        top: 0px;
+      }
+    }
+    .img-tower-mobile{
+      margin: 2rem auto 0 auto;
+    }
+  }
+
+}

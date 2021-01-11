@@ -1,0 +1,68 @@
+.what-is-banner {
+    padding-top: 10rem;
+    display: flex;
+    margin: 0 auto 3rem auto;
+    justify-content: center;
+    @media (max-width: 500px) {
+        width: 17.5rem;
+        flex-direction: column;
+    }
+    @media (min-width: 768px){
+        justify-content: space-around;
+    }
+    @media (min-width: 1000px){
+        justify-content: center;
+    }
+
+    .banner-left{
+        width: 34%;
+        @media (max-width: 500px) {
+            width: 95%;
+        }
+
+        .what-title{
+            width: 27rem;
+            @media (max-width: 500px) {
+                width: 17rem;
+            }
+        }
+
+        h3.blue-text{
+            text-align: left;
+            margin: 1.25rem 0;
+        }
+
+        .banner-list{
+            margin-top: 1.25rem;
+
+            li.banner-list-item{
+                display: flex;
+                align-items: baseline;
+
+                span{
+                    color: #EA3844;
+                    font-weight: bold;
+                }
+
+                p{
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+
+    .banner-right{
+        @media (max-width: 500px) {
+            margin: 2rem auto 0 auto;
+        }
+
+        img.what-is-phone{
+            @media (min-width: 768px){
+                width: 24rem;
+            }
+            @media (min-width: 1000px){
+                width: 30rem;
+            }
+        }
+    }
+}

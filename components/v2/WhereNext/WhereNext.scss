@@ -1,0 +1,38 @@
+.where-next-container {
+    width: 45rem;
+    text-align: center;
+    margin: 3rem auto;
+    margin-top: 12.5rem;
+    @media (max-width: 500px) {
+        width: 17.5rem;
+        margin-top: 4rem;
+    }
+}
+
+.see-junkets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.where-text {
+    margin-bottom: 1rem;
+}
+
+.where-content {
+    width: 35rem;
+    margin: 1rem auto;
+    @media (max-width: 500px) {
+        width: 17.5rem;
+    }
+}
+
+p.see-junket-text {
+    padding-right: 1rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #EA3844;
+    @media (max-width: 500px) {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,43 @@
+.signup-confirm {
+  padding-top: 100px;
+  padding-bottom : 250px;
+
+  display: flex;
+  justify-content: center;
+
+  .confirm-box{
+    margin: 50px;
+    padding: 20px;
+    max-width: 700px;
+    box-shadow: 0px 0px 5px #aaa;
+
+    .title{
+      font-size: 32px;
+      color: #ea3844;
+      font-weight: 700;
+      padding-bottom: 10px;
+    }
+
+    .content{
+      padding-bottom: 20px;
+    }
+
+    .go-back{
+      padding-top: 10px;
+      background-color: #62bc8c;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      text-transform: uppercase;
+      text-align: center;
+      float: right;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    .go-back:hover{
+      background-color: #4aae79;
+    }
+  }
+
+}

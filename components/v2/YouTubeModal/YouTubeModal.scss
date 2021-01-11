@@ -1,0 +1,38 @@
+.YTmodalRoot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.YTopen {
+  opacity: 1;
+  z-index: 1000;
+  transition: z-index 0s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.YTclosed {
+  opacity: 0;
+  z-index: -1;
+  transition: z-index 1.5s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.YTcloseModalX {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  position: fixed;
+  top: 5vh;
+  right: 5vw;
+}
+
+.YTiframeContainer iframe {
+  @media (max-width: 767px) {
+    width: 90vw;
+    height: 60vh;
+  }
+}

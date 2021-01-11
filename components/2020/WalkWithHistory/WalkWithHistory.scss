@@ -1,0 +1,170 @@
+.WalkWithHistoryRoot {
+  background-image: url("../../../public/img/2020/topo-blue-100.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 500px;
+  @media (max-width: 1200px) {
+    height: 450px;
+  }
+  @media (max-width: 1024px) {
+    height: 400px;
+  }
+  @media (max-width: 900px) {
+    height: 350px;
+  }
+  @media (max-width: 600px) {
+    height: 300px;
+  }
+  @media (max-width: 500px) {
+    height: 350px;
+  }
+  @media (max-width: 400px) {
+    height: 400px;
+  }
+}
+
+.walkOverlay {
+  background-image: url("../../../public/img/2020/city.png");
+  background-size: 101vw;
+  background-repeat: no-repeat;
+  background-position: -1px -1px;
+  width: 100%;
+  height: 100%;
+  @media (max-width: 500px) {
+    background-size: 160vw;
+  }
+}
+
+.walkContent {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.walkLeft {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 40%;
+  @media (max-width: 1024px) {
+    width: 35%;
+  }
+  @media (max-width: 540px) {
+    width: 30%;
+  }
+}
+
+.watch {
+  width: 100%;
+}
+
+.walkRight {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  @media (max-width: 1024px) {
+    width: 65%;
+  }
+  @media (max-width: 540px) {
+    width: 70%;
+  }
+}
+
+.walkRightTop {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 70%;
+}
+
+.walkHeader {
+  font-family: "DIN 2014", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 0;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  @media (max-width: 1024px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 1.4rem;
+  }
+}
+
+.walkText {
+  color: #fff;
+  font-family: "DIN 2014", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: 0;
+  @media (max-width: 900px) {
+    font-size: 1.1rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
+}
+
+.walkRightBottom {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  height: 30%;
+}
+
+.rightBottomContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.downloadHeader {
+  font-family: "DIN 2014", sans-serif;
+  color: #000;
+  font-size: 1.8rem;
+  margin-top: 0;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  text-align: center;
+  @media (max-width: 900px) {
+    font-size: 1.1rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+}
+
+.walkButtonsContainer {
+  margin-top: -24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.walkAppleButton {
+  width: 160px;
+  @media (max-width: 1024px) {
+    width: 105px;
+  }
+}
+
+.walkGoogleButton {
+  width: 200px;
+  @media (max-width: 1024px) {
+    width: 130px;
+  }
+}
+

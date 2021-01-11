@@ -1,0 +1,161 @@
+.take-make-junket{
+  margin: 3rem auto 9.375rem auto;
+
+  @media (max-width: 500px) {
+    margin-bottom: 4.7rem;
+  }
+
+  .take-make{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 35rem;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      height: 17rem;
+    }
+    @media (min-width: 1024px) {
+
+      height: 22rem;
+    }
+    @media (min-width: 1400px) {
+      height: 30rem;
+    }
+
+
+    .take-junket, .make-junket{
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title{
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.5em;
+        line-height: 105.97%;
+        /* identical to box height, or 46px */
+        text-align: center;
+        @media (min-width: 1000px) {
+          font-size: 2em;
+        }
+        @media (min-width: 1400px) {
+          font-size: 2.5em;
+        }
+      }
+
+      .subtitle{
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: bold;
+        font-size: .875em;
+        line-height: 105.97%;
+        text-align: center;
+        color: #fff;
+        padding: .25rem 0 .75em 0;
+        width: 60%;
+        @media (max-width: 768px) and (min-width: 500px) {
+          width: 45%;
+        }
+        @media (min-width: 1000px) {
+          font-size: 1em;
+        }
+        @media (min-width: 1400px) {
+          font-size: 1.5em;
+        }
+      }
+
+      .text-content{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: .75em;
+        line-height: 120%;
+        text-align: center;
+        color: #fff;
+        width: 68%;
+        @media (max-width: 768px) and (min-width: 500px) {
+          width: 45%;
+          font-size: .875em;
+        }
+        @media (min-width: 1000px) {
+          width: 50%;
+          font-size: .875em;
+        }
+        @media (min-width: 1400px) {
+          width: 68%;
+          font-size: 1.25em;
+        }
+      }
+
+
+    }
+
+    .take-junket{
+      
+      background-image: url("../../../public/img/v2/bg-take-junket.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      
+      .title{
+        color: #6FC396;
+      }
+
+
+    }
+
+    .make-junket{
+      background-image: url("../../../public/img/v2/bg-make-junket.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .title{
+        color: #405764;
+      }
+    }
+
+  }
+
+  .download-app{
+    margin-top: .5rem;
+    display: flex;
+    justify-content: center;
+    @media (min-width: 1400px) {
+      margin-top: 1.25rem;
+    }
+
+    a.apple {
+      margin-right: .5rem;
+    }
+    
+    img{
+      height: 2.5rem;
+      @media (min-width: 1000px) {
+        height: 3rem;
+      }
+    }
+  }
+}
+
+.signup-button{
+  font-family: "DIN 2014", sans-serif;
+  cursor: pointer;
+  margin-top: .875rem;
+  font-size: 1.25rem;
+  color: #fff;
+  padding: .25rem 1rem;
+  border: 1px solid #bcbcbc;
+  background-color: rgba(0, 0, 0, 1.0);
+  border-radius: 6px;
+  @media (min-width: 1000px) {
+    padding: .5rem 1rem;
+    margin-top: 1.25rem;
+  }
+  @media (min-width: 1400px) {
+    margin-top: 1.5rem;
+  }
+}

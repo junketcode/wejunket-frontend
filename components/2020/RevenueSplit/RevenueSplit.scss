@@ -1,0 +1,104 @@
+.revenueSplitRoot {
+  background-image: url("../../../public/img/2020/topo-white-background-100.jpg");
+  background-size: 101vw;
+  background-position: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.revenueHeaderContainer {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.revenueHeader {
+  font-family: "DIN 2014", sans-serif;
+  color: #000;
+  font-size: 3rem;
+}
+
+.revenueDescription {
+  font-family: "DIN 2014", sans-serif;
+  color: #fff;
+}
+
+.revenueHeaderContainer ul {
+  margin-top: 20px;
+}
+
+.revenueHeaderContainer ul li {
+  padding: 5px 0;
+  display: flex;
+  color: #fff;
+}
+
+.listArrow {
+  height: 18px;
+}
+
+.revenueContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.revenueModelContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.splitImage {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .revenueContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .revenueHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .revenueModelContainer {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .revenueSplitRoot {
+    background-image: url("../../../public/img/2020/topo-white-background-100.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 1300px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+  }
+
+  .revenueHeaderContainer {
+    width: 40%;
+  }
+
+  .revenueContainer {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .revenueModelContainer {
+    margin: 20px 0;
+    height: 350px;
+    width: 25%;
+  }
+
+  .splitImage {
+    height: 70%;
+  }
+}

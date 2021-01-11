@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1184 404" width="1184" height="404">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ea3844 } 
+		.shp1 { fill: none;stroke: #405764;stroke-linecap:round;stroke-linejoin:round;stroke-width: 1.8;stroke-dasharray: 11 } 
+	</style>
+	<path id="Layer" class="shp0" d="M85.75 89.75C98.03 38.47 145.45 3.48 198.07 6.88L1035.08 60.93C1095.3 64.82 1140.72 117.16 1136.1 177.32L1129.47 263.7C1125.23 319 1079.89 362.16 1024.45 363.68L154.72 387.61C83.49 389.57 29.8 323.41 46.4 254.11L85.75 89.75Z" />
+	<path id="Layer" class="shp1" d="M1017.5 328C453.64 350.05 714.65 451.51 197.2 358.29C-7.07 321.5 -7.07 77.98 197.2 41.2C421.83 11.52 489.42 -0.27 888.76 33.47C1133.63 65.05 1245.82 328 1017.5 328Z" />
+</svg>

@@ -1,0 +1,32 @@
+.price-plan-monthly{
+    height: 79px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: #405764;
+
+    .monthy-price{
+        font-size: 28px;
+        line-height: 32px;
+        
+    }
+
+    .bill-annually{
+        font-size: 10px;
+        line-height: 10px;
+    }
+
+    .year-price{
+        display: flex;
+        font-size: 13px;
+        .old-price{
+            color: #ea3844;
+            text-decoration: line-through;
+            padding-right: 5px
+        }
+    }
+}

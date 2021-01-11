@@ -1,0 +1,12 @@
+.liner-container{
+  background-image: url("../../public/img/v2/curve-line.svg");
+  background-size: cover;
+  height: auto;
+  margin-top: -8.75rem;
+  @media (max-width: 767px) {
+    background-image: none;
+  }
+  @media (min-width: 1300px) {
+    margin-top: -15.75rem;
+  }
+}

@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Success</title>
+    <style>
+        .wejunketbook-card {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wejunketbook-card input {
+            width: 100%;
+            height: 33px;
+            border-radius: 4px;
+            border: 1px solid #707070;
+            padding: 5px;
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .wejunketbook-card-main-info {
+            flex: 1 1 40%;
+        }
+
+        .wejunketbook-card-main-info .name-field {
+            margin: 5px 8px 5px 0;
+        }
+
+        .wejunketbook-card-main-info .info-field2 {
+            padding: 10px;
+        }
+
+        .wejunketbook-card-price-info {
+            display: flex;
+            flex: 1 1 40%;
+            align-items: center;
+        }
+
+        .wejunketbook-card-form {
+            display: flex;
+        }
+
+        .wejunketbook-card-form-left {
+            flex: 1 1 40%;
+            flex-direction: column;
+            margin-right: 20px;
+        }
+
+        .wejunketbook-card-form-right {
+            flex: 1 1 30%;
+            flex-direction: column
+        }
+
+        .wejunketbook-card-due-price {
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .wejunketbook-card__btn {
+            width: 130px;
+            height: 33px;
+            background: #6DC497;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px;
+            margin: 20px auto;
+        }
+
+        .wejunketbook-step-base-2 {
+            background: #60A7DB;
+            border: 4px solid #60A7DB;
+            color: white;
+        }
+
+        .wejunketbook-backbtn {
+            display: flex;
+            flex: 1 1 40%;
+            align-items: center;
+        }
+
+        #wejunketbookBackbtn {
+            font-size: 15px !important;
+            color: #707070 !important;
+            padding-left: 20px;
+            cursor: pointer !important;
+            text-decoration: underline;
+        }
+
+        #wejunketbookTotalPrice3 {
+            font-size: 30px !important;
+            color: #6DC497;
+            font-weight: bold;
+        }
+
+        #wejunketbookTotalPrice4 {
+            font-size: 20px !important;
+            color: white !important;
+        }
+
+        .wejunketbook-back-btn {
+            position: absolute;
+            top: 12px;
+            left: 20px;
+            color: #707070 !important;
+            cursor: pointer;
+        }
+
+
+        #wejunketbookName1 {
+            font-size: 20px !important;
+        }
+
+        .wejunketbook-card-due-price-mobile {
+            display: none;
+        }
+
+        .wejunketbook-card-space {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #707070;
+            margin-right: 16px;
+            margin-left: 16px;
+        }
+
+        .wejunketbook-card-space-first {
+            flex: 1 1 20%;
+            /*padding: 20px 30px;*/
+        }
+
+        .wejunketbook-card-space-second {
+            flex: 1;
+            padding-right: 30px;
+        }
+
+        .fieldgroup {
+            float: left;
+            width: auto;
+            margin-left: 3em;
+            font-size: small;
+        }
+
+        .radio-input {
+            height: initial !important;
+            width: initial !important;
+        }
+
+        #wejunketbookWidgetModal {
+            z-index: 9999999;
+            text-align: left;
+        }
+
+        .wejunket-modal h1,
+        .wejunket-modal h2,
+        .wejunket-modal h3,
+        .wejunket-modal input,
+        .wejunket-modal label,
+        .wejunket-modal button,
+        .wejunket-modal p {
+            font-size: 16px;
+            font-family: "DIN 2014", sans-serif !important;
+            color: black;
+            text-shadow: none;
+            font-weight: 500;
+        }
+
+        .wejunket-modal span {
+            font-size: 20px;
+            font-family: "DIN 2014", sans-serif !important;
+            color: black;
+            text-shadow: none;
+            font-weight: 500;
+        }
+
+        .wejunket-modal {
+            position: fixed; /* Stay in place */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .wejunket-modal-content {
+            border: solid 10px transparent;
+            border-radius: 20px;
+            background-image: linear-gradient(white, white),
+            linear-gradient(to right, #DA494F, #6EC298);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            padding: 0px;
+            margin: 10% auto; /* 15% from the top and centered */
+            max-width: 1080px; /* Could be more or less, depending on screen size */
+        }
+
+        .wejunket-modal-content.wejunket-page {
+            max-width: 100%;
+            min-height: calc(100vh - 20px);
+            margin: 0px;
+            border-radius: 0px;
+        }
+
+        .wejunketbookWidgetOpenModal {
+            height: 45px;
+            background: linear-gradient(45deg, #EA3844, #60A7DB, #6FC396);
+            border: none;
+            color: white;
+            border-radius: 5px;
+            font-size: 25px;
+            margin: 20px;
+            padding-left: 35px;
+            padding-right: 35px;
+            cursor: pointer;
+            outline: none;
+            font-weight: bold;
+        }
+
+        .wejunketbook-widget {
+            margin: auto;
+            max-width: 1080px;
+            font-family: "DIN 2014", sans-serif;
+        }
+
+        .wejunketbook {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wejunketbook-titlebar {
+            position: relative;
+            text-align: center;
+            border-bottom: 1px solid #707070;
+        }
+
+        .wejunketbook-titlebar h1 {
+            font-size: 32px !important;
+            font-weight: 500;
+            margin: 15px;
+        }
+
+        .wejunketbook-close-btn {
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            font-size: 30px !important;
+            color: #707070 !important;
+            cursor: pointer;
+            opacity: 1 !important;
+        }
+
+        .wejunketbook-main {
+            display: flex;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #707070;
+        }
+
+        .wejunketbook-main-img {
+            flex: 1 1 20%;
+            padding: 20px 30px;
+        }
+
+        .wejunketbook-main-img img {
+            width: 100%;
+        }
+
+        .wejunketbook-main-info {
+            flex: 1 1 80%;
+        }
+
+        .wejunketbook-title h1 {
+            font-size: 27px !important;
+            font-weight: 500;
+            text-align: left !important;
+        }
+
+        .wejunketbook-info {
+            display: flex;
+        }
+
+        .wejunketbook-info h2 {
+            text-align: left;
+            font-size: 24px !important;
+            font-weight: 500;
+            margin: 0 0 15px 0;
+            color: #60A7DB !important;
+        }
+
+        .wejunketbook-info-groupsize {
+            flex: 1 1 20%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wejunketbook-info-groupsize label {
+            margin-bottom: 12px;
+        }
+
+        .wejunketbook-info-groupsize__btn {
+            width: 33px;
+            height: 33px;
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #707070;
+            outline: none;
+            cursor: pointer;
+        }
+
+        .wejunketbook-info-groupsize__input {
+            width: 33px;
+            height: 33px;
+            text-align: center;
+            border: none;
+        }
+
+        .wejunketbook-info-primary {
+            flex: 1 1 30%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .wejunketbook-info-primary label {
+            margin-bottom: 12px;
+        }
+
+        .wejunketbook-info-primary input {
+            width: 100%;
+            height: 33px;
+            border-radius: 4px;
+            border: 1px solid #707070;
+            padding: 5px;
+            margin-bottom: 12px;
+            font-size: 15px !important;
+        }
+
+        .wejunketbook-info-primary span {
+            color: red !important;
+            margin-bottom: 10px !important;
+            margin-top: -5px !important;
+            font-size: 16px !important;
+        }
+
+        .wejunketbook-info-primary_btn {
+            height: 33px;
+            color: white !important;
+            background: #6DC497;
+            border: 2px solid #6DC497;
+            color: white;
+            border-radius: 5px;
+            font-size: 20px !important;
+            margin: 20px;
+            padding-left: 35px;
+            padding-right: 35px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .wejunketbook-info-primary_btn:hover {
+            border: 2px solid #2C966E;
+        }
+
+        .wejunketbook-info-primary_btn:focus {
+            border: 2px solid #2C966E;
+        }
+
+        .wejunketbook-info-price {
+            flex: 1 1 50%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 35px;
+        }
+
+        .wejunketbook-info-price p {
+            margin: 0;
+            font-size: 15px !important;
+        }
+
+        .wejunketbook-info-price h3 {
+            font-size: 24px !important;
+            font-weight: 500;
+            color: #60A7DB;
+        }
+
+        .wejunketbook-info-total-price {
+            padding-top: 43px;
+            flex: 1 1 20%;
+        }
+
+        .wejunketbook-info-total-price p {
+            margin: 0;
+            font-size: 20px !important;
+        }
+
+        .wejunketbook-info-total-price h3 {
+            font-size: 24px !important;
+            font-weight: 500;
+        }
+
+        .wejunketbook-step {
+            flex: 1 1 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wejunketbook-step .hr1 {
+            height: 8px !important;
+            width: 36px;
+            margin: 0;
+            background: linear-gradient(to right, #dd4b4f, #54a8d8);
+            border: none;
+        }
+
+        .wejunketbook-step .hr2 {
+            height: 8px !important;
+            width: 36px;
+            margin: 0;
+            background: linear-gradient(to right, #54a8d8, #73bb95);
+            border: none;
+        }
+
+        .wejunket-step-base {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .wejunketbook-step-1 {
+            background: #EA3844;
+            border: 4px solid #EA3844;
+            color: white;
+        }
+
+        .wejunketbook-step-2 {
+            border: 4px solid #60A7DB;
+            color: #707070;
+        }
+
+        .wejunketbook-step-3 {
+            border: 4px solid #6FC396;
+            color: #707070;
+        }
+
+        .wejunketbook-sslimg {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex: 1 1 40%;
+        }
+
+        #wejunketbookTotalPrice1 {
+            font-size: 24px !important;
+            font-weight: bold !important;
+        }
+
+        .wejunketbook-info-price span,
+        #wejunketbookTotalPrice {
+            font-size: 15px;
+        }
+
+        .wejunketbook-bottom {
+            display: flex;
+        }
+
+        .wejunketbook-calc-price {
+            position: absolute;
+            right: 10px;
+        }
+
+        .wejunketbook-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        #wejunketCardErrorModal {
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .wejunket-error-modal-content {
+            background: linear-gradient(45deg, #EA3844, #60A7DB, #6FC396);
+            border: none;
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 10px;
+            border: 1px solid #888;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .wejunket-modal-close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .wejunket-modal-close:hover,
+        .wejunket-modal-close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .wejunket-modal-body {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .wejunketbook-error {
+            display: block;
+            color: red !important;
+            margin-top: -5px;
+            margin-bottom: 10px;
+            font-size: 16px !important;
+        }
+
+        .wejunketbook-result {
+            text-align: center;
+            position: relative;
+        }
+
+        .wejunketbook-result p {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        .wejunketbook-step-base-3 {
+            background: #6FC396;
+            border: 4px solid #6FC396;
+            color: white;
+        }
+
+        .wejunketbook-thanks {
+            color: #60A7DB !important;
+            font-size: 40px !important;
+        }
+
+        .wejunketbook-thanks__p {
+            font-size: 40px !important;
+            margin: 20px;
+        }
+
+        .wejunketbook-desc {
+            font-size: 22px !important;
+        }
+
+        .wejunketbook-download-desc {
+            color: #60A7DB;
+            font-size: 30px !important;
+            margin-top: 20px;
+        }
+
+        .wejunketbook-deep-link {
+            text-decoration: none;
+            color: white;
+            background: #6FC396;
+            padding: 8px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="wejunketbookWidgetModal" class="wejunket-modal" style="display: block;">
+    <div class="wejunket-modal-content undefined">
+        <div class="wejunketbook-widget">
+            <div class="wejunketbook-result">
+                <span style="display: none;" class="close wejunketbook-close-btn" id="wejunketbookClose2">×</span>
+                <p class="wejunketbook-thanks__p"><span class="wejunketbook-thanks">Payment has been cancelled.</span></p>
+                <p class="wejunketbook-desc">You can Book a junket anytime you want.</p>
+               <!-- <p style="display: none;"><strong>This is your activation code:</strong></p>
+                <p style="max-width: 700px;margin: auto;display: none;" id="wejunketbookPromoCodes">
+                </p>
+                <p style="margin:5px;display: none;"><strong>Please keep this code handy as you will need it to activate
+                    your Junket.</strong></p>
+                <p style="margin:5px">We will send you an email with further instructions on how to start your
+                    adventure.</p>
+                <p style="margin:5px">Please look for <strong>contact@wejunket.com</strong> in your email or the spam
+                    folder.</p>-->
+                <!--<div>
+                    <p class="wejunketbook-download-desc">Download Junket now!</p>
+                    <a href="https://apps.apple.com/us/app/junket-explore-your-world/id1297242830">
+                        <img src="https://wejunket.com/img/app-store/App_Store.png" style="width: 130px;height: 45px">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.junket.app">
+                        <img src="https://wejunket.com/img/app-store/google.png" style="width: 130px;height: 45px">
+                    </a>
+                </div>
+                <div style="margin: 20px;">
+                    <a href="https://wejunket.com/what-is-junket" style="color: #60A7DB;font-size: 30px;">How does
+                        Junket work?</a>
+                </div>-->
+
+                <div id="div-btn-go-back" style="margin: 20px;display: none;cursor:pointer;">
+                    <a id="btn-go-back" style="color: #60A7DB;font-size: 30px;">
+                        Go Back
+                    </a>
+                </div>
+                <!--<div style="display: flex;margin-bottom: 20px;">
+                    <div style="flex:1 1 40%"></div>
+                    <div class="wejunketbook-step">
+                        <div class="wejunket-step-base wejunketbook-step-1">1</div>
+                        <hr size="10" noshade="" class="hr1">
+                        <div class="wejunket-step-base wejunketbook-step-base-2">2</div>
+                        <hr size="10" noshade="" class="hr2">
+                        <div class="wejunket-step-base wejunketbook-step-base-3">3</div>
+                    </div>
+                    <div class="wejunketbook-sslimg">
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function getParameterByName(name, url = window.location.href) {
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+    window.onload = () => {
+        var redirectAddress = getParameterByName('redirect');
+        if (redirectAddress) {
+            const div = document.getElementById('div-btn-go-back');
+            div.style.display = 'block';
+
+            const btn = document.getElementById('btn-go-back');
+            const address = window.atob(redirectAddress);
+            btn.addEventListener('click',()=>{
+                document.location.replace(address);
+            })
+        }else{
+        }
+    }
+</script>
+</body>
+</html>

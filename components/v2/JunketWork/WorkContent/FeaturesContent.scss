@@ -1,0 +1,29 @@
+.features-content{
+    margin: 0 5rem;
+    width: 85vw;
+    @media (min-width: 1000px) {
+      width: 25rem;
+    }
+  
+    .blue-text{
+      font-size: 1.5em;
+      font-weight: bold;
+      line-height: 106%;
+      text-align: start;
+      margin: 0 auto 2rem auto;
+    }
+  
+    .feature-item{
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.25rem;
+  
+      p{
+        font-size: .875rem;
+      }
+  
+      img{
+        padding-right: 18px;
+      }
+    }
+  }

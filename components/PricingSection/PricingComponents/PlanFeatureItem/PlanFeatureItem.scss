@@ -1,0 +1,99 @@
+.price-plan-feature{
+    height: 35px;
+    background-color: #fff;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 500;
+
+    img{
+        height: 25px;
+    }
+
+    p{
+        color: #405764;
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+}
+
+
+.price-plan-feature.starter{
+    background-color: #405764;
+    color: #fff;
+
+    p{
+        color: white;
+    }
+}
+
+.price-plan-feature.business{
+    background-color: #60A7DB;
+    color: #fff;
+
+    p{
+        color: white;
+    }
+}
+
+.price-plan-feature.junketeer{
+    background-color: #6FC396;
+    color: #fff;
+
+    p{
+        color: white;
+    }
+}
+
+.price-plan-feature.odd{
+    background-color: #F2F2F2;
+    color: #405764;
+}
+
+.price-plan-feature.even{
+    background-color: #fff;
+    color: #405764;
+}
+
+.price-plan-feature.feature{
+    width: 18rem;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    font-size: 20px;
+    color: #000;
+    font-weight: normal;
+}
+
+.price-plan-feature.wye{
+    background-color: #BDBDBD;
+    color: #fff;
+
+    p{
+        color: white;
+    }
+}
+
+.mobile-txt{
+    display: none;
+}
+
+@media (max-width: 768px){
+
+    .price-plan-feature{
+        display: flex;
+        font-size: 14px;
+        color: #000;
+        justify-content: space-between;
+        padding: 0px 20px;
+
+        img{
+            height: 15px;
+        }
+    }
+    .mobile-txt{
+        display: block;
+    }
+}

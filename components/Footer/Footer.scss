@@ -1,0 +1,30 @@
+.junket-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .footer-copyright{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .copyright-date{
+    font-size: 1rem;
+  }
+
+  .footer-policy{
+    font-family: "Roboto";
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 150%;
+    /* or 24px */
+  
+    color: #405764;
+  }
+}

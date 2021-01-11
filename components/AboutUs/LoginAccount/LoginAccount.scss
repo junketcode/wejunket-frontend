@@ -1,0 +1,102 @@
+.login-account{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto 9.4rem auto;
+
+  @media (max-width: 768px) {
+    margin-bottom: 4.7rem;
+  }
+
+  .grey-title{
+    margin-bottom: 1.5rem;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 105.97%;
+    text-align: center;
+    color: #405764;
+    width: 30vw;
+
+    @media(max-width: 1000px) {
+      width: 50vw;
+    }
+    @media(max-width: 500px) {
+      width: 80vw;
+    }
+  }
+  
+  .login-btn-group{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+
+
+    & > a {
+      flex-basis:48%;
+      width: 14vw;
+      border-radius: 15px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1rem;
+      text-align: center;
+      padding: 1%;
+      cursor: pointer;
+      border: 2px solid #405764;
+
+      @media (max-width: 1300px) {
+        font-size: 0.8rem;
+      }
+      @media (max-width: 1024px) {
+        width: 25vw;
+        font-size: 1rem;
+      }
+      @media (max-width: 768px) {
+        width: auto;
+        padding: 10px 15px;
+        font-size: 1rem;
+        margin-bottom: 5%;
+      }
+    }
+
+    .signup {
+      background: #405764;
+      color: #FFFFFF;
+    }
+    
+    .signin {
+      color: #405764;
+      background: #FFFFFF;
+    }
+
+  }
+
+  .get-in-touch {
+    width: 25%;
+    margin-top: 2rem;
+    @media (max-width: 768px) {
+      width: 50%;
+    }  
+    @media (max-width: 500px) {
+      width: 80%;
+    }  
+
+    p {
+      font-family: Roboto;
+      font-size: 1rem;
+      line-height: 120%;
+      text-align: center;
+      color: #405764;
+
+      a {
+        color: #60A7DB;
+      }
+    }
+  }
+}
+

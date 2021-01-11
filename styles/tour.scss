@@ -1,0 +1,10 @@
+.tour-container{
+  width: 1300px;
+  margin: 0 auto;
+  margin-top: 130px;
+  margin-bottom: 100px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}

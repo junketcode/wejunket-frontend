@@ -1,0 +1,45 @@
+.org-content{
+    margin: 0 auto;
+    @media (min-width: 1000px) {
+      width: 30rem;
+    }
+  
+    .org-item{
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-bottom: 1.25rem;
+  
+      img{
+        padding-right: 18px;
+        height: 22px;
+      }
+
+      .list-cont{
+        text-align: left;
+        width: 15rem;
+        @media (min-width: 1000px) {
+          width: 25rem;
+        }
+
+        .blue-text{
+          font-size: 1em;
+          font-weight: bold;
+          line-height: 106%;
+          text-align: start;
+          margin: 0 auto .5rem auto;
+        }
+
+        .list-text{
+          margin-bottom: 1rem;
+          font-size: .875rem;
+          font-weight: 500;
+          width: 15rem;
+          line-height: 1rem;
+          @media (min-width: 1000px) {
+            width: 24.5rem;
+          }
+        }
+      }
+    }
+}

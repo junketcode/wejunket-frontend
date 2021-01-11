@@ -1,0 +1,114 @@
+.how-create{
+
+    .how-create-container{
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 950px) {
+            flex-direction: row;
+            align-items: center;
+          }
+    }
+
+    .phone-play {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &:hover .hover-button{
+            display: block;
+        }
+
+        .hover-button {
+            display:none;
+            position: absolute;
+            padding-left: 1rem;
+            width: 5rem;
+            z-index: 5;
+
+            &:focus{
+                outline-style: none;
+            }
+        }
+    }
+
+    .create-list{
+        width: 15rem;
+        margin: 0 auto 3rem auto;
+        @media (min-width: 950px) {
+            width: 23rem;
+        }
+        @media (min-width: 1200px) {
+            width: 25rem;
+        }
+    }
+
+    ol{
+        list-style: decimal;
+        color: #60A7DB;
+        font-weight: 700;
+    }
+
+    ul{
+        list-style: circle;
+        color: black;
+        padding-left: .875rem;
+
+        p.sub-text{
+            font-size: .875rem;
+            font-weight: 500;
+        }
+
+        p.sub-text span {
+            color: red;
+        }
+    }
+
+    .blue-text{
+        font-size: 1rem;
+        margin: 1rem 0;
+        text-align: left;
+
+        span{
+            color: #6FC396;
+        }
+      }
+    
+    .grey-title{
+        margin: 0 auto 1.5rem auto;
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    .sufering{
+        margin: 0 auto 3rem auto;
+        width: 10rem;
+    }
+
+    .how-create-phone img{
+        margin: 0 auto;
+    }
+
+    .side-notes {
+
+        img{
+            margin: 0 auto 1rem auto;
+        }
+
+        .note1{
+            font-weight: 700;
+            width: 16rem;
+            text-align: center;
+            font-style: italic;
+            line-height: 1rem;
+            margin: 0 auto .5rem auto;
+        }
+
+        .note2{
+            text-align: center;
+
+            span{
+                color:red;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.price-plan-select{
+    height: 89px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    button{
+        height:100%;
+        width: 100%;
+        font-size: 30px;
+        color:#fff;
+        border-radius: 10px;
+    }
+}
+
+.price-plan-select.starter button{
+    background-color: #6FC396;
+}
+
+.price-plan-select.starter button:hover{
+    background-color: #5fab82;
+    box-shadow: 0 0px 5px #555;
+}
+
+.price-plan-select.business button{
+    background-color: #60A7DB;
+}
+
+.price-plan-select.business button:hover{
+    background-color: #4d94c7;
+    box-shadow: 0 0px 5px #555;
+}
+
+
+.price-plan-select.junketeer button{
+    background-color: #405764;
+}
+
+.price-plan-select.junketeer button:hover{
+    background-color: #2c424e;
+    box-shadow: 0 0px 5px #555;
+}

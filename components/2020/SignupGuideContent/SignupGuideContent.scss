@@ -1,0 +1,42 @@
+#signupGuide {
+  padding-top: 110px;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+  .header-section {
+    display: flex;
+    &__left {
+      flex: 1 1 60%;
+
+      &-img{
+        width: 55%;
+        height: auto !important;
+        margin: auto;
+      }
+
+      &-first-title {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 26px;
+        color: #334554;
+        font-weight: 600
+      }
+
+      &-second-title {
+        text-align: center;
+        font-size: 26px;
+        color: #334554;
+        font-weight: 800
+      }
+
+      &-third-title {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 26px;
+      }
+    }
+    &_right {
+      flex: 1 1 40%;
+    }
+  }
+}

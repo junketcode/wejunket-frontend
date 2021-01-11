@@ -1,0 +1,97 @@
+.HaveAnAppRoot {
+  background-image: url("../../../public/img/2020/topo-blue-100.jpg");
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+}
+
+.HaveAnAppOverlay {
+  background-image: url("../../../public/img/2020/have-an-app.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 -1px;
+  width: 100%;
+  height: 100%;
+  @media (max-width: 600px) {
+    background-size: 260vw;
+    background-position: -350px 0;
+  }
+}
+
+.HaveAnAppContent {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+  }
+}
+
+.HaveAnAppLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  @media (max-width: 600px) {
+    margin: 0 auto;
+  }
+}
+
+.HaveAnAppPhones {
+  width: 100%;
+}
+
+
+.HaveAnAppRight {
+  width: 70%;
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.HaveAnAppRightTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  height: 50%;
+  @media (max-width: 1356px) {
+    margin: 20px auto 0;
+  }
+  @media (max-width: 1100px) {
+    margin: 40px auto 0;
+  }
+  @media (max-width: 900px) {
+    margin: 60px auto 0;
+  }
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.HaveAnAppHeader {
+  font-family: "DIN 2014", sans-serif;
+  color: #000;
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  @media (max-width: 900px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.7rem;
+  }
+}
+
+.HaveAnAppText {
+  color: #000;
+  font-family: "DIN 2014", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}

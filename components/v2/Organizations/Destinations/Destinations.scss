@@ -1,0 +1,70 @@
+.destinations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto 0 auto;
+
+    .blue-text{
+      font-size: 1rem;
+    }
+  
+    .grey-title{
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 2em;
+      width: 13rem;
+    }
+  
+    .sufering{
+      margin-bottom: 3rem;
+      width: 10rem;
+    }
+
+    .dest-container{
+        display: flex;
+        flex-direction: column-reverse;
+
+        @media (min-width: 950px) {
+            flex-direction: row;
+        }
+
+        h3{
+          margin: 0 auto 1.5rem auto;
+          text-align: center;
+          font-weight: 500;
+        }
+
+        .feedback-quote-right{
+            margin: 0 5rem 0 auto;
+        }
+
+        .feedback-quote-left{
+          margin: 0 auto 0 5rem;
+        }
+
+        .feedback-quote-left, .feedback-quote-right{
+            position: relative;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 44px rgba(0, 0, 0, 0.15);
+            border-radius: 23.0458px;
+            height: 11rem;
+            display: flex;
+            max-width: 16rem;
+            align-items: center;
+            padding: 0 1.5rem;
+            z-index: 1;
+            @media (max-width:767px) {
+              margin: 0 auto;
+            }
+          
+            p{
+              font-size: .9rem;
+              color: #6FC396;
+              line-height: 120%;
+              font-weight: 500;
+              z-index: 2;
+              text-align: center;
+            }
+          }
+    }
+}

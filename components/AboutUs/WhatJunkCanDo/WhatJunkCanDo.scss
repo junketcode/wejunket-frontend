@@ -1,0 +1,57 @@
+.what-junket-can-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 6rem auto 0 auto;
+
+  @media (max-width: 1024px) {
+    margin-top: 2rem;
+  }
+
+  .grey-title{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2em;
+    width: 80vw;
+  }
+
+  .history-explain{
+    width: 86vw;
+    max-width: 35rem;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 1em;
+    line-height: 120%;
+    text-align: center;
+    color: #405764;
+  }
+
+  .sufering{
+    margin-bottom: 3rem;
+  }
+
+  .how-work-top{
+    display: flex;
+    margin-bottom: 5rem;
+    flex-direction: column-reverse;
+    @media (min-width: 1000px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  .how-work-down{
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    @media (min-width: 1000px) {
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    div{
+      flex-basis: 50%;
+    }
+  }
+
+}

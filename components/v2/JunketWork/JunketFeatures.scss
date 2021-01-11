@@ -1,0 +1,74 @@
+.junket-features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem auto 0 auto;
+  
+    .grey-title{
+      margin-bottom: 1.5rem;
+      text-align: center;
+      font-size: 2em;
+      width: 55vw;
+    }
+  
+    .sufering{
+      margin-bottom: 3rem;
+      width: 10rem;
+    }
+  
+
+    .features-content .feature-list .feature-item p{
+      font-weight: 500;
+    }
+
+    .features-top{
+      display: flex;
+      flex-direction: column;
+      @media (min-width: 950px) {
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 2rem;
+      }
+
+      .features-content {
+        width: 15.5rem;
+        @media (min-width: 950px)  {
+          width: 21.5rem;
+          margin-right: 3rem;
+        }
+      }
+
+      div{
+        margin-bottom: 1.5rem;
+      }
+    }
+    
+    .features-down{
+      display: flex;
+      margin-bottom: 2rem;
+      flex-direction: column-reverse;
+      @media (min-width: 950px) {
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .business-img{
+        @media (min-width: 950px) {
+          margin-right: 3rem;
+        }
+      }
+
+      .features-content {
+        width: 15.5rem;
+        @media (min-width: 950px)  {
+          width: 21.5rem;
+        }
+      }
+      
+      div{
+        flex-basis: 50%;
+        margin-bottom: 1.5rem;
+      }
+    }
+  
+  }

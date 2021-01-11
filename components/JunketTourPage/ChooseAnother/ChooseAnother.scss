@@ -1,0 +1,20 @@
+.choose-another {
+  display: inline;
+  border-bottom: 1px solid #B4B4B4;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: #B4B4B4;
+  padding-bottom: 0.3125rem;
+  cursor: pointer;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  img {
+    display: inline;
+    margin-right: 0.4375rem;
+  }
+}

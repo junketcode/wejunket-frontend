@@ -1,0 +1,228 @@
+.junketBusinessRoot {
+  background-image: url("../../../public/img/2020/junket-for-business-combined.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 570px;
+  width: 100%;
+  @media (max-width: 1300px) {
+    height: 750px;
+  }
+  @media (max-width: 768px) {
+    background-image: url("../../../public/img/2020/topo-background-100.jpg");
+    height: 600px;
+  }
+  @media (max-width: 600px) {
+    height: 650px;
+  }
+  @media (max-width: 567px) {
+    height: 750px;
+  }
+  @media (max-width: 420px) {
+    height: 820px;
+  }
+  @media (max-width: 375px) {
+    height: 870px
+  }
+  @media (max-width: 339px) {
+    height: 890px;
+  }
+  @media (max-width: 325px) {
+    height: 910px;
+  }
+  @media (max-width: 320px) {
+    height: 930px;
+  }
+}
+
+.junketBusinessOverlay {
+  width: 100%;
+  height: 100%;
+  @media (max-width: 768px) {
+    background-image: url("../../../public/img/2020/business-banner.png");
+    background-repeat: no-repeat;
+    background-position: 0 -1px;
+    background-size: 1300px;
+  }
+  @media (max-width: 650px) {
+    background-size: 1200px;
+  }
+  @media (max-width: 568px) {
+    background-size: 1100px;
+  }
+}
+
+.junketBusinessContent {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.junketBusinessLeft {
+  width: 60%;
+  @media (max-width: 1024px) {
+    width: 65%;
+  }
+  @media (max-width: 850px) {
+    width: 70%;
+  }
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.junketBusinessLeftTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  @media (max-width: 768px) {
+    height: 60%;
+  }
+
+  @media (max-width: 420px) {
+    height: 54%;
+  }
+}
+
+.forBusinessHeader {
+  font-family: "DIN 2014", sans-serif;
+  color: #000;
+  font-size: 2rem;
+  margin: 0 auto 20px auto;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  @media (max-width: 850px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 524px) {
+    font-size: 1.4rem;
+  }
+}
+
+.junketBusinessLogo {
+  width: 50%;
+  @media (max-width: 850px) {
+    margin-top: -50px;
+  }
+  @media (max-width: 768px) {
+    width: 90%;
+    margin-top: 20px;
+  }
+  @media (max-width: 650px) {
+    margin-top: -20px;
+  }
+  @media (max-width: 600px) {
+    margin-top: 40px;
+  }
+  @media (max-width: 420px) {
+    margin-top: -40px;
+  }
+}
+
+.junketBusinessLeftBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50%;
+  @media (max-width: 1300px) {
+    margin-top: -20px;
+  }
+  @media (max-width: 880px) {
+    margin-top: 0;
+  }
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    height: 50%;
+  }
+  @media (max-width: 600px) {
+    margin-top: 50px;
+    align-items: center;
+  }
+  @media (max-width: 420px) {
+    margin-top: 50px;
+  }
+  @media (max-width: 375px) {
+    margin-top: 50px;
+  }
+
+  @media(max-width: 420px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.leftBottomHeader {
+  font-family: "DIN 2014", sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  margin: 20px 0 40px 0;
+  letter-spacing: 0.5rem;
+  font-weight: 300;
+  @media (max-width: 1024px) {
+    margin-top: 0;
+  }
+  @media (max-width: 900px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 768px) {
+    font-size: 1.7rem;
+  }
+  @media (max-width: 500px) {
+    font-size: 1.4rem;
+  }
+}
+
+.leftBottomText {
+  color: #fff;
+  font-family: "DIN 2014", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: -30px 0 0;
+  @media(min-width: 1024px) {
+    margin: -30px 30px 0 0;
+  }
+}
+
+.junketBusinessRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  @media (max-width: 1200px) {
+    align-items: center;
+    width: 35%;
+  }
+  @media (max-width: 850px) {
+    width: 30%;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.cmsImage {
+  width: 90%;
+  max-width: 615px;
+  padding-bottom: 20px;
+}
+
+.st0
+{
+  font-family: "DIN 2014", sans-serif;
+  cursor: pointer;
+  margin-top: 0;
+  font-size: 2rem;
+  color: #000;
+  padding: 5px 45px;
+  border: 2px solid #000;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 25px;
+}
+

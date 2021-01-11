@@ -1,0 +1,46 @@
+.headerMenuRoot {
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.menuUnderline{
+  height:2px;
+  width:50%;
+  background: transparent;
+}
+
+.headerMenuItem{
+  position: relative;
+}
+
+.headerMenuItem.cms-login{
+  margin-top: -5px;
+}
+
+.headerMenuLinkText {
+  font-family: "Roboto";
+  padding: 0 20px;
+  cursor: pointer;
+  color: #405764;
+  font-size: 15px;
+  line-height: 22px;
+  &:hover{
+    color:#60A7DB;
+  }
+  
+}
+
+.headerMenuLinkText:hover + .menuUnderline { 
+  height:2px;
+  width:50%;
+  background:#60A7DB;
+  position:absolute;
+  left:calc(25%);
+}
+
+
+
+

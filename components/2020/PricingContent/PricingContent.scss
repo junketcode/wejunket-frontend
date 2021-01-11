@@ -1,0 +1,126 @@
+.pricingRoot {
+  background-image: url("../../../public/img/2020/pricing-mobile-100.jpg");
+  background-size: 101vw;
+  background-position: center;
+  width: 100vw;
+  padding-bottom: 20px;
+}
+
+.pricingFlex {}
+
+.pricingHeaderContainer {
+  padding-top: 104px;
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.pricingHeader {
+  font-family: "DIN 2014", sans-serif;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.pricingDescription {
+  font-family: "DIN 2014", sans-serif;
+  color: #fff;
+}
+
+.pricingHeaderContainer ul {
+  margin-top: 20px;
+}
+
+.pricingHeaderContainer ul li {
+  padding: 5px 0;
+  display: flex;
+  color: #fff;
+}
+
+.listArrow {
+  height: 18px;
+}
+
+.pricingContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pricingModelContainer {
+  margin: 20px auto;
+}
+
+.selectPlanContainer {
+  text-align: center;
+  margin: 10px auto 0 auto;
+}
+
+.selectPlanButton {
+  padding: 10px 40px;
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: rgba(255,255,255,0.7);
+    transition: background-color 0.3s ease-in-out;
+  }
+}
+
+.additionalJunketsContainer {
+  margin: 0 auto 20px auto;
+  text-align: center;
+  color: #fff;
+  span {
+    color: red;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .pricingContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .pricingModelContainer {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pricingRoot {
+    background-image: url("../../../public/img/2020/pricing-background-100.jpg");
+    background-size: 101vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: cover;
+    padding: 0 40px 10px 40px;
+  }
+
+  .pricingFlex {
+    display: flex;
+  }
+
+  .pricingHeaderContainer {
+    width: 40%;
+    padding-top: 160px;
+  }
+
+  .pricingContainer {
+    padding-top: 104px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .pricingModelContainer {
+    margin: 0;
+    width: 25%;
+  }
+
+  .centerContainer {
+    width: 25.2%;
+    padding: 20px 0;
+  }
+}

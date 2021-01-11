@@ -1,0 +1,134 @@
+.find-junkets-container{
+    background-image: url("../../../public/img/v2/bg-find-junkets.svg");
+    background-size: 100%100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 19.58rem;
+    margin: 7rem auto 10rem auto;
+    position: relative;
+    @media (max-width: 500px) {
+        background-image: url("../../../public/img/pages/whatisjunk/findjunkets.png");
+        height: 19rem;
+        margin: 1rem auto 7rem auto;
+    }
+    @media (min-width: 768px) {
+        background-size: contain;
+        height: 20.5rem;
+    }
+    @media (min-width: 1024px) {
+        background-size: contain;
+        height: 25.5rem;
+    }
+
+    .white-title{
+        color: white;
+        font-size: 2rem;
+        line-height: 2rem;
+        text-align: center;
+        margin: 6rem auto 1rem auto;
+        width: 25rem;
+        @media (max-width: 500px) {
+            width: 15rem;
+            margin: 2.5rem auto 1rem auto;
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            margin: 3rem auto .5rem auto;
+        }
+        @media (min-width: 1000px){
+            margin: 6rem auto 1rem auto;
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+        @media (min-width: 1300px){
+            margin: 7rem auto 1rem auto;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+        }
+    }
+
+    .main-text{
+        color: white;
+        text-align: center;
+        width: 51rem;
+        margin: 0 auto;
+        @media (max-width: 500px) {
+            width: 18rem;
+            font-size: .75rem;
+        }
+        @media (min-width: 768px) {
+            width: 40rem;
+        }
+        @media (min-width: 1300px){
+            width: 51rem;
+            font-size: 1.25rem;
+        }
+    }
+
+    .find-bottom{
+        background-image: url("../../../public/img/v2/bg-find-junkets2.svg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 77%;
+        right: 5%;
+        @media (max-width: 500px) {
+            top: 62%;
+            right: 10%;
+        }
+        @media (min-width: 768px) {
+            top: 65%;
+            right: 10%;
+        }
+        @media (min-width: 1000px){
+            top: 75%;
+            right: 10%;
+        }
+        @media (min-width: 1300px){
+            right: 25%;
+            width: 40rem;
+            height: 8rem;
+        }
+
+        .detail-text{
+            color: white;
+            font-size: .875rem;
+            font-weight: 400;
+            padding: 0 1rem 0 2.5rem;
+            @media (max-width: 500px) {
+                font-size: .75rem;
+                padding: 0 0 0 1.5rem;
+            }
+            @media (min-width: 1300px){
+                font-size: 1rem;
+                font-weight: 500;
+            }
+        }
+
+        img.white-arrow{
+            @media (max-width: 500px) {
+                width: 2rem;
+                padding-right: .5rem;
+            }
+            @media (min-width: 768px) {
+                width: 3.5rem;
+                padding-right: 1rem;
+            }
+            @media (min-width: 1300px){
+                width: 4rem;
+                padding-right: 0rem;
+            }
+        }
+    }
+}

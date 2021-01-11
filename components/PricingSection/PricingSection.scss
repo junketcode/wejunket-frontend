@@ -1,0 +1,146 @@
+.price-section{
+    padding: 4rem 0 2rem 0;
+
+    @media (max-width: 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .price-container{
+        max-width: 1000px;
+        width: 1000px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .pricing-description{
+        
+            .title{
+                font-family: "Raleway";
+                font-style: normal;
+                font-weight: bold;
+                text-align: center;
+                font-size: 2rem;
+                line-height: 105.97%;
+                color: #405764;
+            }
+        
+            .description{
+                display: none;
+                @media (min-width: 1001px) {
+                    margin-top: .25rem;
+                    font-size: 20px;
+                    text-align: center;
+                    display: block;
+                }
+            }
+
+            img{
+                margin: 1rem auto 0rem auto;
+                @media (min-width: 1001px) {
+                    margin: 1rem auto 12rem auto;
+                }
+            }
+        }
+
+        .price-plan-part{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: -150px auto 0 auto;
+
+            .plan-additional{
+                width: 58%;
+                margin-top: 20px;
+                font-size: 22px;
+                @media (min-width: 1001px) {
+                    width: 58%;
+                    margin: 1.25rem 4rem 0 auto;
+                    font-size: 1.25rem;
+                }
+
+                .see-more{
+                    color: red;
+                }
+                
+                .see-more:hover{
+                    color: #60A7DB;
+                }
+            }
+// when select btns are added back make margin top -10.5rem
+            .price-plan-description{
+                width: 80%;
+                margin-top: 1.5rem;
+                font-size: 20px;
+                @media (min-width: 1001px) {
+                    width: 26%;
+                    margin: -4.5rem auto 0 2.75rem;
+                    font-size: 1rem;
+                }
+
+                p{
+                    margin-bottom: 1rem;;
+                }
+            }
+        }
+        .price-plan-section{
+            display: flex;
+            width: 1000px;
+            justify-content: flex-end;
+
+            .price-feature, .starter, .business, .junketeer{
+                flex-basis: 25%;
+            }
+        }
+
+        @media (max-width: 1000px){
+
+            width: 90%;
+
+            .price-plan-part{
+                align-items: center;
+                margin-top: 50px;
+                
+                .plan-additional{
+                    width: 16.25rem;
+                }
+
+                .price-plan-description{
+                    width: 16.25rem;
+                }
+            }
+            .price-plan-section{
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+
+                .price-feature{
+                    display: none;
+                }
+
+                .price-plan{
+                    margin-top: 2.5rem;
+                }
+            }
+
+           
+        }
+
+        @media (max-width: 554px){
+            width: 100%;
+
+            .price-plan-part{
+                .plan-additional{
+                    font-size: .875rem;
+                }
+
+                .price-plan-description{
+                    font-size: .875rem;
+                }
+            }
+
+        }
+    }
+}

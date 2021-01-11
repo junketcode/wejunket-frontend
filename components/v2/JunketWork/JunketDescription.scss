@@ -1,0 +1,51 @@
+.junket-description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12rem auto 0 auto;
+  padding-top: 0rem;
+  
+  @media (min-width: 768px) {
+    padding-top: 2rem;
+  }
+  
+  @media (min-width: 1000px) {
+    padding-top: 13rem;
+  }
+
+  .grey-title{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2em;
+    width: 80vw;
+  }
+
+  .sufering{
+    margin-bottom: 3rem;
+  }
+
+  .how-work-top{
+    display: flex;
+    margin-bottom: 5rem;
+    flex-direction: column-reverse;
+    @media (min-width: 1000px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  .how-work-down{
+    display: flex;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    @media (min-width: 1000px) {
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    div{
+      flex-basis: 50%;
+    }
+  }
+
+}

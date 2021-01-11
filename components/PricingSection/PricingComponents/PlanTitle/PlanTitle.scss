@@ -1,0 +1,26 @@
+.price-plan-title{
+    height: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+
+    p.plan-title{
+        font-size: 44px;
+        font-weight: 700;
+        color: white;
+    }
+}
+
+.price-plan-title.starter{
+    background-color: #405764;
+}
+
+.price-plan-title.business{
+    background-color: #60A7DB;
+}
+
+.price-plan-title.junketeer{
+    background-color: #6FC396;
+}

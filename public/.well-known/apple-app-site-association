@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+    {
+      "appID": "A33X78LYH7.com.InnovationWorks.Junket",
+      "paths": ["/junket/*"]
+    }
+    ]
+  }
+}

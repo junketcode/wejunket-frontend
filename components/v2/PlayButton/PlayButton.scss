@@ -1,0 +1,21 @@
+.play-btn-style{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+.txt-style{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 105.97%;
+    // textAlign: center;
+    color: #EA3844;
+    padding: 1rem;
+  }

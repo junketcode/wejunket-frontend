@@ -1,0 +1,76 @@
+import * as React from "react"
+import FormGroup from "../FormGroup/FormGroup"
+import { ISignUpData } from "../../services/auth.service"
+
+const formFieldDefinition = [
+  {
+    label: "Full Name",
+    name: "name",
+    type: "text",
+    inputType: "input",
+    placeholder: "John Doe",
+  },
+  {
+    label: "Email",
+    name: "email",
+    type: "email",
+    inputType: "input",
+    placeholder: "john@doe.com",
+  },
+  {
+    label: "Password",
+    name: "password",
+    type: "password",
+    inputType: "input",
+    placeholder: "********",
+  },
+  {
+    label: "Password Confirmation",
+    name: "password_confirmation",
+    type: "password",
+    inputType: "input",
+    placeholder: "********",
+  },
+]
+
+export const SignUpForm = ({ handleSubmitData }) => {
+  const [signUpData, setSignUpData] = React.useState<ISignUpData>({
+    email: "",
+    name: "",
+    password: "",
+    password_confirmation: "",
+  })
+
+  const handleValueChange = event => {
+    const { name, value } = event.target
+    setSignUpData({ ...signUpData, [name]: value })
+  }
+
+  const onSubmit = e => {
+    e.preventDefault()
+    handleSubmitData(signUpData)
+  }
+
+  return (
+    <form className="w-full border-l border-b border-r p-8" onSubmit={onSubmit}>
+      {formFieldDefinition &&
+        formFieldDefinition.map(ffDef => (
+          <FormGroup {...ffDef} handleValueChange={handleValueChange} />
+        ))}
+      <div className="md:flex md:items-center">
+        <div className="md:w-1/3" />
+        <div className="md:w-2/3">
+          <button
+            className="shadow bg-blue-800 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+            type="button"
+            onClick={onSubmit}
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </form>
+  )
+}
+
+export default SignUpForm
